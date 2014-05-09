@@ -42,7 +42,7 @@ var options = {};
 var mongo = require('./db/mongo-store');
 mongo(options);
 options.mongoose = mongo.mongoose;
-require('./models/sms')(options);
+require('./models/pb')(options);
 
 routes(app, options);
 
