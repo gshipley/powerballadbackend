@@ -53,7 +53,7 @@ exports.list = function(mongoose) {
     if(req.query.limit) {
       options.limit = req.query.limit;
     }
-    mongoModel.find(null, null, options)..exec( function (err, objs) {
+    mongoModel.find(null, null, options).exec( function (err, objs) {
         console.log("in here");
       if (err) {
         console.log(err);
